@@ -1,0 +1,88 @@
+<div class="container">
+      
+
+      <h1 class="text-center p-5 mt-4 mb-4" style="color:rgb(150,110,300);">Answer the questions</h1>
+
+
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-4">
+            <form class="lead" action="/predict" method="post">
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">No. of Dependents:</label><br>
+                <input class="form-control" type="text" required name="no_of_dependents" placeholder="1,2,3,.....">
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Education:</label><br>
+                <select class="form-control" required name="education">
+                  <option selected>Choose...</option>
+                  <option>Graduate</option>
+                  <option>Not Graduate</option>
+                </select>
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Self-Employed:</label><br>
+                <select class="form-control" required name="self_employed">
+                  <option selected>Choose...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Annual Income:</label><br>
+                <input class="form-control" type="text" required name="income_annum" placeholder="Enter Annual Income in dollars($)">
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Loan Amount:</label><br>
+                <input class="form-control" type="text" name="loan_amount" placeholder="Enter Loan Amount in dollars($)">
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Loan Term:</label><br>
+                <input class="form-control" type="text" required name="loan_term" placeholder="Enter Loan term in year">
+              </div>
+    
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Cibil Score:</label><br>
+                <input class="form-control" type="text" required name="cibil_score" placeholder="">
+              </div>
+            
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Residential Asset value:</label><br>
+                <input class= "form-control" type="text" required name="residential_assets_value" placeholder="In dollars($)">
+              </div>
+            
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Commercial Asset Value:</label><br>
+                <input class= "form-control" type="text" required name="commercial_assets_value" placeholder="In dollars($)">
+              </div>
+            
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Luxury Asset Value:</label><br>
+                <input class= "form-control" type="text" required name="luxury_assets_value" placeholder="In dollars($)">
+              </div>
+            
+              <div class="mb-2">
+                <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Bank Asset Value:</label><br>
+                <input class= "form-control" type="text" required name="bank_asset_value" placeholder="In dollars($)">
+              </div>
+            
+              <div class="text-center">
+                <button class="btn btn-primary btn-lg" type="submit">Predict</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-6 align-self-center">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_V0pDim.json"  background="transparent"  speed="1"  style="width: 700px; height: 700px;"  loop  autoplay></lottie-player>
+        </div>
+        
+      </div>
+      
+    </div>
