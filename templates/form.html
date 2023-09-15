@@ -8,6 +8,7 @@
         <div class="col-6">
           <div class="mb-4">
             <form class="lead" action="/predict" method="post">
+              
               <div class="mb-2">
                 <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">No. of Dependents:</label><br>
                 <input class="form-control" type="text" required name="no_of_dependents" placeholder="1,2,3,.....">
@@ -17,8 +18,8 @@
                 <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Education:</label><br>
                 <select class="form-control" required name="education">
                   <option selected>Choose...</option>
-                  <option>Graduate</option>
-                  <option>Not Graduate</option>
+                  <option value = '1'>Graduate</option>
+                  <option value = '0'>Not Graduate</option>
                 </select>
               </div>
     
@@ -26,8 +27,8 @@
                 <label style="font-size:20px;color:rgb(100,100,100); font-family:Lucida Console;">Self-Employed:</label><br>
                 <select class="form-control" required name="self_employed">
                   <option selected>Choose...</option>
-                  <option>Yes</option>
-                  <option>No</option>
+                  <option value = "1">Yes</option>
+                  <option value = "0">No</option>
                 </select>
               </div>
     
