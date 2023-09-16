@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    
+<head>
     <title>Loan Prediction</title>
 
     {% include 'bootstrap_css.html' %}
     {% include 'lottie_script.html' %}
-    
 
     <style>
-      img{
-        max-width: 100%;
-        height: auto;  
-      }
+        img {
+            max-width: 100%;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .lottie-animation {
+            width: 600px;
+            height: 600px;
+        }
     </style>
-    
-  </head>
+</head>
 
-  <body>
-
+<body>
     {% include 'nav.html' %}
 
-    <div class='container'>
+    <div class="container">
+        <div class="text-center p-5 mt-4 mb-4 center-container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://lottie.host/6bdf759b-7e72-4af7-a8f8-861c80ef22b4/jMgrGOvCwg.json"
+                background="transparent" speed="1" class="lottie-animation" loop autoplay></lottie-player>
 
-      <div class="text-center p-5 mt-4 mb-4">
-  
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://lottie.host/6bdf759b-7e72-4af7-a8f8-861c80ef22b4/jMgrGOvCwg.json" background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
-  
-        <p>Loan can not be approved😢</p>
+            <h1>Loan can not be approved😢</h1> <br>
+        </div>
+      <div class= "text-center mb-4">
+        <a href="/" class="text-center btn btn-outline-primary btn-lg">Check again</a>
       </div>
-  
     </div>
 
     <!--javascript file-->
-    
-    {% include 'bootstrap_js.html' %}  
-    
-  </body>
 
+    {% include 'bootstrap_js.html' %}
+</body>
 </html>
